@@ -9,4 +9,4 @@ type ProductSales record {
 
 type SalesReport record {
  ProductSales[] productSalesList;
-}
+};
