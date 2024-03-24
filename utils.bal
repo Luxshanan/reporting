@@ -14,10 +14,9 @@ function createSalesReportTable(SalesReport salesReport) returns string {
         reportTbl = reportTbl + delimiter + 
         productSales.productSku + delimiter +
         productSales.productName + delimiter +
-        productSales.unitPrice + delimiter +
-        productSales.unitsSold + delimiter +
-        productSales.total + delimiter +
-        + delimiter + "\n";
+        (productSales.unitPrice).toString() + delimiter +
+        (productSales.unitsSold).toString() + delimiter +
+        (productSales.total).toString() + delimiter + "\n";
     }
 
     reportTbl = reportTbl + "----------------------------------\n";
